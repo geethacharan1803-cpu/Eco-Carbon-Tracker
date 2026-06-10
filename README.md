@@ -1,11 +1,9 @@
-<div align="center">
+# Sustainability & Eco-Impact Assistant
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+The **Sustainability and Eco-Impact Assistant** is designed to address the pressing global challenge of climate change of individual action. It serves as a smart, context-aware companion that translates abstract carbon emission statistics into clear, actionable regional steps. The assistant dynamically guides users to form sustainable carbon-reducing habits through regional carbon accounting, community integration, and personalized micro-pledges.
 
-  <h1>Built with AI Studio</h2>
+Our development approach focuses on dynamic, context-aware decision-making. The assistant leverages real-time user metrics—including active pledges, regional emission coefficients, and current time grids—to calculate personalized priority scores. When a user interacts with the assistant, it evaluates which ecological category (Energy, Diet, Waste, or Transport) represents their greatest carbon saving opportunity and suggests color-coded micro-pledges optimized for maximum immediate reduction. This feedback loop builds authentic daily habits without user information fatigue.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+The application works by aggregating local carbon telemetry with active user commitments under a single visual dashboard. Users enter regular log updates, which dynamically adjust active habit milestones, progress metrics, and regional carbon offsetting statistics. We made three primary design assumptions: first, that users can access or estimate standard regional emission values; second, that visual reward systems, like custom points celebrations, significantly improve habit retention; and third, that a local persistent state is appropriate for simple personal carbon bookkeeping.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+To ensure the solution is inclusive and accessible to all users, we prioritized high-contrast styling and ergonomic usability. Every color-coded category tag (such as Energy, Diet, Waste, and Transport) features distinct visual symbols and WCAG-compliant color contrasts. Active pledge modules use elegant Framer Motion animated progress bars to represent milestones, supported by explicit numeric and text labels to assist screen readers. By designing touch target sizes that exceed 44px, the companion assistant ensures a seamless, highly legible responsive experience across both mobile and desktop screens.

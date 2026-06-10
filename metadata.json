@@ -1,0 +1,6 @@
+{
+  "name": "Eco Carbon Tracker",
+  "description": "An interactive application to understand, track, and reduce your carbon footprint with gamification, local hubs, Sage assistant, daily challenges, and analytics.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  /* Natural Tones Palette - Professional Polish Theme */
+  --color-forest-50: #F7F5EF;        /* Very light cream-tinted background */
+  --color-forest-100: #E9E5D9;       /* Theme stone border */
+  --color-forest-150: #DFDAC7;       /* Intermediate stone border */
+  --color-forest-200: #DECBB3;       /* Accented border */
+  --color-forest-400: #588157;       /* Sage accent */
+  --color-forest-500: #588157;       /* Theme sage green */
+  --color-forest-600: #3E6B39;       /* Deeper sage */
+  --color-forest-700: #2D5A27;       /* Theme forest green */
+  --color-forest-750: #22441D;       /* Rich forest accent */
+  --color-forest-800: #1C3518;       /* Deepest forest green */
+  --color-forest-900: #122110;       /* Dark forest slate */
+  --color-forest-950: #0C160B;       /* Darkest forest background */
+  
+  --color-cream-50: #F4F1EA;         /* Core cream background */
+  --color-cream-100: #E9E5D9;        /* Stone cream background */
+  --color-cream-102: #EDEAE1;        /* Slightly darker cream */
+  --color-cream-200: #DCD6C4;        
+  --color-cream-202: #F7F5F0;        
+
+  --color-sage-50: #F2F5F2;
+  --color-sage-100: #E4ECE5;
+  --color-sage-200: #C9DBCD;
+  --color-sage-300: #A3B18A;         /* Theme olive green */
+  --color-sage-500: #588157;         /* Theme sage green */
+  --color-sage-600: #426742;         /* Sage deep focus */
+  --color-sage-700: #2D5A27;         /* Theme forest green */
+  --color-sage-800: #213C1E;         /* Dark forest-sage link */
+
+  --color-earth-50: #FAF7F2;
+  --color-earth-100: #EBE5D8;
+  --color-earth-200: #DECBAE;
+  --color-earth-500: #9F8367;
+  --color-earth-650: #2D5A27;        /* Map earth highlights to Forest/Sage */
+  --color-earth-800: #203A1B;
+}
+
+/* Custom Scrollbars to match the Professional Polish palette */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F1EA;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #0C160B;
+}
+::-webkit-scrollbar-thumb {
+  background: #A3B18A;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #2D5A27;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: background-color, border-color, text-decoration-color, fill, stroke, transform;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
