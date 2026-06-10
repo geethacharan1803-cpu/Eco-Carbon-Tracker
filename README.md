@@ -1,9 +1,96 @@
 # Sustainability & Eco-Impact Assistant
+# 🌿 Carbon Insight — Your Personal Eco Companion
 
-The **Sustainability and Eco-Impact Assistant** is designed to address the pressing global challenge of climate change of individual action. It serves as a smart, context-aware companion that translates abstract carbon emission statistics into clear, actionable regional steps. The assistant dynamically guides users to form sustainable carbon-reducing habits through regional carbon accounting, community integration, and personalized micro-pledges.
+**Carbon Insight** is a web-based sustainability dashboard built to help individuals track, understand, and reduce their daily carbon footprints. Designed with a **Natural Tones** theme, it combines interactive data visualization, community challenges, gamification, and a voice-enabled smart AI assistant to drive behavioral change towards eco-friendly living.
 
-Our development approach focuses on dynamic, context-aware decision-making. The assistant leverages real-time user metrics—including active pledges, regional emission coefficients, and current time grids—to calculate personalized priority scores. When a user interacts with the assistant, it evaluates which ecological category (Energy, Diet, Waste, or Transport) represents their greatest carbon saving opportunity and suggests color-coded micro-pledges optimized for maximum immediate reduction. This feedback loop builds authentic daily habits without user information fatigue.
+---
 
-The application works by aggregating local carbon telemetry with active user commitments under a single visual dashboard. Users enter regular log updates, which dynamically adjust active habit milestones, progress metrics, and regional carbon offsetting statistics. We made three primary design assumptions: first, that users can access or estimate standard regional emission values; second, that visual reward systems, like custom points celebrations, significantly improve habit retention; and third, that a local persistent state is appropriate for simple personal carbon bookkeeping.
+## 🎯 Challenge Vertical: Behavioral Sustainability & Smart Eco-Assistance
 
-To ensure the solution is inclusive and accessible to all users, we prioritized high-contrast styling and ergonomic usability. Every color-coded category tag (such as Energy, Diet, Waste, and Transport) features distinct visual symbols and WCAG-compliant color contrasts. Active pledge modules use elegant Framer Motion animated progress bars to represent milestones, supported by explicit numeric and text labels to assist screen readers. By designing touch target sizes that exceed 44px, the companion assistant ensures a seamless, highly legible responsive experience across both mobile and desktop screens.
+This solution focuses on the **Behavioral Sustainability** vertical. Our goal is to convert complex, abstract climate science into tangible, daily habits. Instead of just showing numbers in a spreadsheet, **Carbon Insight** translates metric tonnes of CO₂ into "phone charges," "trees planted," or "car miles avoided," creating immediate, relatable feedback loops. 
+
+Additionally, the smart assistant **Sage** acts as a context-aware coach. Sage analyzes the user's logged activity history to dynamically suggest personalized sustainability tips (e.g. recommending cycling if the user frequently logs driving, or composting if food waste is logged).
+
+---
+
+## ✨ Core Features
+
+1. **Daily Activity Tracker & Budgeting**:
+   - Log activities across 5 core verticals: *Transport, Energy, Diet (Food), Waste, and Water*.
+   - Uses real-world scientific emission factors to calculate carbon output.
+   - Monitors a daily CO₂ budget (limit of 11.0 kg/day) with a circular SVG progress indicator.
+
+2. **Interactive Local Hub**:
+   - Leaflet-powered maps matching the user's location to nearby recycling centers, transit stations, and composting hubs.
+
+3. **Gamification & Leaderboard**:
+   - Earn points for logging positive activities (e.g. solar energy use, cycling).
+   - Unlock 12 distinct milestone-based badges (e.g. *Plant Pioneer*, *Energy Saver Pro*).
+   - Track consecutive daily logging streaks (visualized with an active flame indicator).
+   - Participate in community-wide sustainability challenges and view rankings on a leaderboard.
+
+4. **Carbon Impact Calculator**:
+   - Run simulation sliders (e.g., "If I bike X km/week instead of driving") to estimate annual savings and see equivalent visual impact comparisons.
+
+5. **Contextual AI Assistant (Sage)**:
+   - Floating assistant utilizing **Text-to-Speech (SpeechSynthesis API)** for reading suggestions out loud.
+   - **Personalized Tips Carousel** displaying context-aware recommendations tailored to the user's dominant logging categories.
+   - Interactive prompt options for tracking stats, streaks, or carbon reduction progress.
+   - **Voice Logging** (Web SpeechRecognition API) allows hands-free logging of daily habits.
+
+6. **Data Portability**:
+   - Export logging history to standard CSV files directly from the dashboard.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Frontend**: React 18, Vite (for hot module replacement and performance)
+- **Styling**: Pure CSS (using custom HSL tokens, CSS Grid, Flexbox, glassmorphic card stylings)
+- **Animations**: Framer Motion (for staggered list transitions, active navigation highlights, and modal slides)
+- **Data Visualization**: Chart.js & `react-chartjs-2` (30-day interactive history lines and donut category breakdowns)
+- **Maps**: Leaflet & `react-leaflet`
+- **Voice APIs**: SpeechRecognition (log voice inputs) & SpeechSynthesis (TTS aloud)
+- **State Management**: React Context API & `useReducer` with local persistence.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure you have **Node.js (v16+)** and **npm** installed.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/carbon-insight.git
+   cd Carbon-insight
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Build for production:
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 🌿 Natural Tones Palette (Light/Dark Mode)
+
+Carbon Insight ships with a dynamic dark/light toggle centered around earthy green, soft clay, and natural light tones:
+- **Light Mode Background**: `#FAF7F2` (Warm Sand)
+- **Dark Mode Background**: `#1A1A2E` (Deep Forest Shadows)
+- **Primary Accent**: `#4CAF50` (Leaf Green)
+- **Secondary Accent**: `#00897B` (Mineral Teal)
+- **Warning Accent**: `#FF8F00` (Earthy Amber)
